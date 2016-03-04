@@ -22,7 +22,7 @@ docker pull bekberov/redis_centos7:latest
 docker run -d --name redis_cento7 -p 6379:6379 -v /redis/log:/var/redis/log/redis -v /redis/data:/var/lib/redis bekberov/redis_centos7
 
 ```
-
+```
 docker create -it -p 6379:6379 --name container-redis zokeber/redis
 ```
 
@@ -37,12 +37,18 @@ docker start container-redis
 
 **Redis client:**
 
+```
 `docker exec -it redis_centos7 redis-cli`
+```
 
 **Bash:**
 
+```
 `docker exec -it redis_centos7 bash`
+```
 
 **Build image:**
 
+```
 docker build --no-cache -t redis_centos7 .
+```

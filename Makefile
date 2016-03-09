@@ -3,7 +3,7 @@ TAG   = latest
 
 build:
         @docker build  --no-cache -t $(IMAGE) .
-#        @docker run -v erlang/app:/etc/app -i $(IMAGE)
+#        @docker run -d --name redis_cento7 -p 6379:6379 -v /redis/log:/var/redis/log/redis -v /redis/data:/var/lib/redis $(IMAGE)
 
 release:
 #       @docker build -t $(IMAGE) .

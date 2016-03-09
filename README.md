@@ -50,5 +50,5 @@ docker start container-redis
 **Build image:**
 
 ```
-docker build --no-cache -t redis_centos7 .
+docker build --no-cache -t bekberov/docker_redis_centos7 .
 ```
